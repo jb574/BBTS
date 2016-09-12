@@ -1,0 +1,28 @@
+New log file opened at Sun Apr 17 12:47:41 BST 2016 by 39454@jacks-MacBook-Pro.local
+Taking next connection to: 60211
+New client attempting to connect on port: 60212-60211
+  Address = /192.168.0.25:60211
+This client on port 60212 has uuid 151caacf-cf1c-41ee-87b6-56b3bdea8c47 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-151caacf-cf1c-41ee-87b6-56b3bdea8c47
+Taking next connection to: 60211
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60211
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60211
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60211
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60211
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60211
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 39454@jacks-MacBook-Pro.local logs at Sun Apr 17 13:05:41 BST 2016, goodbye.

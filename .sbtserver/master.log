@@ -1,0 +1,1447 @@
+New log file opened at Sun Apr 17 12:47:41 BST 2016 by 39454@jacks-MacBook-Pro.local
+jvm 39454@jacks-MacBook-Pro.local
+jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.5-b02
+jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
+jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
+Starting event engine
+Starting sbt command engine
+Waiting for sbt command engine
+Command engine arguments=List()
+Command engine baseDirectory=/Users/jackdavey/Documents/BBTS
+Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
+> --initialize
+> initialize
+> onFailure load-failed
+> boot
+> reload
+[Loading] Scanning directory /Users/jackdavey/Documents/BBTS/project
+[Loading] Found non-root projects 
+[Loading] Done in /Users/jackdavey/Documents/BBTS/project, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in /Users/jackdavey/Documents/BBTS/project, returning: (bbts-build)
+Loading project definition from /Users/jackdavey/Documents/BBTS/project
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@51dbd3e5, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+[Loading] Scanning directory /Users/jackdavey/Documents/BBTS
+[Loading] Found non-root projects 
+[Loading] Done in /Users/jackdavey/Documents/BBTS, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.BackgroundRunPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.InteractionServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SendEventServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SerializersPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.SerializersPlugin,sbt.plugins.SendEventServicePlugin,sbt.plugins.InteractionServicePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.BackgroundRunPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in /Users/jackdavey/Documents/BBTS, returning: (bbts)
+Set current project to hello-akka (in build file:/Users/jackdavey/Documents/BBTS/)
+Reapplying settings...
+Set current project to hello-akka (in build file:/Users/jackdavey/Documents/BBTS/)
+> iflast shell
+> server-send-ready-for-request
+> server-handle-next-server-request
+> {file:/Users/jackdavey/Documents/BBTS/}bbts/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@a106c00, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/jackdavey/Documents/BBTS/src/main/scala-2.11/Main.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/HelloAkkaScala.scala, /Users/jackdavey/Documents/BBTS/src/main/java/HelloAkkaJava.java)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala-2.11/Main.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/HelloAkkaScala.scala, /Users/jackdavey/Documents/BBTS/src/main/java/HelloAkkaJava.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala-2.11/Main.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/HelloAkkaScala.scala, /Users/jackdavey/Documents/BBTS/src/main/java/HelloAkkaJava.java)
+
+Recompiling all 3 sources: invalidated sources (3) exceeded 50.0% of all sources
+Read from stdout: Compiling 2 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Compiling 2 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Waiting for lock on /Users/jackdavey/.ivy2/.sbt.ivy.lock to be available...
+Other repositories:
+Default repositories:
+Read from stdout: 'compiler-interface' not yet compiled for Scala 2.11.8. Compiling...
+'compiler-interface' not yet compiled for Scala 2.11.8. Compiling...
+Plain interface to Scala compiler 2.11.8  with arguments: 
+	-nowarn
+	-d
+	/var/folders/zw/t2s_xm_d2fd7hmtbq1wsg0mh0000gn/T/sbt_c63e691
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/.sbt/boot/scala-2.10.4/com.typesafe.sbtrc/server-0-13/0.3.5/xsbti/interface-0.13.8.jar:/Users/jackdavey/.sbt/boot/scala-2.10.4/com.typesafe.sbtrc/server-0-13/0.3.5/compiler-interface-src/compiler-interface-src-0.13.8.jar:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.11.8.jar:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.8.jar:/Users/jackdavey/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.4.jar:/Users/jackdavey/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar:/Users/jackdavey/.ivy2/cache/jline/jline/jars/jline-2.12.1.jar
+	/var/folders/zw/t2s_xm_d2fd7hmtbq1wsg0mh0000gn/T/sbt_723fa959/xsbt/API.scala
+	/var/folders/zw/t2s_xm_d2fd7hmtbq1wsg0mh0000gn/T/sbt_723fa959/xsbt/Analyzer.scala
+	/var/folders/zw/t2s_xm_d2fd7hmtbq1wsg0mh0000gn/T/sbt_723fa959/xsbt/Command.scala
+	/var/folders/zw/t2s_xm_d2fd7hmtbq1wsg0mh0000gn/T/sbt_723fa959/xsbt/Compat.scala
+	/var/folders/zw/t2s_xm_d2fd7hmtbq1wsg0mh0000gn/T/sbt_723fa959/xsbt/CompilerInterface.scala
+	/var/folders/zw/t2s_xm_d2fd7hmtbq1wsg0mh0000gn/T/sbt_723fa959/xsbt/ConsoleInterface.scala
+	/var/folders/zw/t2s_xm_d2fd7hmtbq1wsg0mh0000gn/T/sbt_723fa959/xsbt/DelegatingReporter.scala
+	/var/folders/zw/t2s_xm_d2fd7hmtbq1wsg0mh0000gn/T/sbt_723fa959/xsbt/Dependency.scala
+	/var/folders/zw/t2s_xm_d2fd7hmtbq1wsg0mh0000gn/T/sbt_723fa959/xsbt/ExtractAPI.scala
+	/var/folders/zw/t2s_xm_d2fd7hmtbq1wsg0mh0000gn/T/sbt_723fa959/xsbt/ExtractUsedNames.scala
+	/var/folders/zw/t2s_xm_d2fd7hmtbq1wsg0mh0000gn/T/sbt_723fa959/xsbt/LocateClassFile.scala
+	/var/folders/zw/t2s_xm_d2fd7hmtbq1wsg0mh0000gn/T/sbt_723fa959/xsbt/Log.scala
+	/var/folders/zw/t2s_xm_d2fd7hmtbq1wsg0mh0000gn/T/sbt_723fa959/xsbt/Message.scala
+	/var/folders/zw/t2s_xm_d2fd7hmtbq1wsg0mh0000gn/T/sbt_723fa959/xsbt/ScaladocInterface.scala
+Read from stdout: Compilation completed in 20.613 s
+  Compilation completed in 20.613 s
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 47d352b, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-actor_2.11/2.4.0/jars/akka-actor_2.11.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-testkit_2.11/2.4.0/jars/akka-testkit_2.11.jar
+Scala compilation took 24.179922 s
+Attempting to call com.sun.tools.javac.api.JavacTool@37d59e5b directly...
+Java compilation took 0.838112 s
+Java analysis took 0.008075 s
+Java compile + analysis took 0.854236 s
+Invalidating /Users/jackdavey/Documents/BBTS/src/main/scala-2.11/Main.scala...
+Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/BBTS/src/main/scala-2.11/Main.scala...
+Initial set of included nodes: Set(/Users/jackdavey/Documents/BBTS/src/main/scala-2.11/Main.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/BBTS/src/main/scala-2.11/Main.scala)
+The /Users/jackdavey/Documents/BBTS/src/main/scala-2.11/Main.scala source file has the following regular definitions changed:
+	notify, wait, $asInstanceOf, equals, asInstanceOf, executionStart, synchronized, $isInstanceOf, main, notifyAll, isInstanceOf, ==, clone, Main, toString, args, !=, getClass, ne, eq, delayedInit, ##, finalize, hashCode.
+All member reference dependencies will be considered within this context.
+Invalidating /Users/jackdavey/Documents/BBTS/src/main/scala/HelloAkkaScala.scala...
+Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/BBTS/src/main/scala/HelloAkkaScala.scala...
+Initial set of included nodes: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/HelloAkkaScala.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/HelloAkkaScala.scala)
+The /Users/jackdavey/Documents/BBTS/src/main/scala/HelloAkkaScala.scala source file has the following implicit definitions changed:
+	self, context.
+All member reference dependencies will be considered within this context.
+Invalidating /Users/jackdavey/Documents/BBTS/src/main/java/HelloAkkaJava.java...
+Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/BBTS/src/main/java/HelloAkkaJava.java...
+Initial set of included nodes: Set(/Users/jackdavey/Documents/BBTS/src/main/java/HelloAkkaJava.java)
+Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/BBTS/src/main/java/HelloAkkaJava.java)
+The /Users/jackdavey/Documents/BBTS/src/main/java/HelloAkkaJava.java source file has the following regular definitions changed:
+	.
+All member reference dependencies will be considered within this context.
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 26 s, completed 17-Apr-2016 12:48:20
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/jackdavey/Documents/BBTS/}bbts/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@660194ca, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Read from stdout: Multiple main classes detected.  Run 'show discoveredMainClasses' to see the list
+Multiple main classes detected.  Run 'show discoveredMainClasses' to see the list
+Total time: 0 s, completed 17-Apr-2016 12:48:21
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/jackdavey/Documents/BBTS/}bbts/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@503c345c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed 17-Apr-2016 12:48:21
+> server-post-command-cleanup
+> server-handle-next-server-request
+Received execution starting without a waiting first ExecutionStarting(4)
+Received execution starting without a waiting first ExecutionStarting(4)
+Use 'last' for the full log.
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@48dbccbf, check cycles: false
+
+Initial source changes: 
+	removed:Set(/Users/jackdavey/Documents/BBTS/src/main/scala-2.11/Main.scala)
+	added: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/Main.scala)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala-2.11/Main.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/Main.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala-2.11/Main.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/Main.scala)
+
+Recompiling all 3 sources: invalidated sources (2) exceeded 50.0% of all sources
+Read from stdout: Compiling 2 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Compiling 2 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 164d1669, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-actor_2.11/2.4.0/jars/akka-actor_2.11.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-testkit_2.11/2.4.0/jars/akka-testkit_2.11.jar
+Scala compilation took 1.503661 s
+Attempting to call com.sun.tools.javac.api.JavacTool@607e383a directly...
+Java compilation took 0.149117 s
+Java analysis took 0.001081 s
+Java compile + analysis took 0.157556 s
+Invalidating /Users/jackdavey/Documents/BBTS/src/main/scala/Main.scala...
+Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/BBTS/src/main/scala/Main.scala...
+Initial set of included nodes: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/Main.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/Main.scala)
+The /Users/jackdavey/Documents/BBTS/src/main/scala/Main.scala source file has the following regular definitions changed:
+	notify, wait, $asInstanceOf, equals, asInstanceOf, executionStart, synchronized, $isInstanceOf, main, notifyAll, isInstanceOf, ==, clone, Main, toString, args, !=, getClass, ne, eq, delayedInit, ##, finalize, hashCode.
+All member reference dependencies will be considered within this context.
+Invalidating /Users/jackdavey/Documents/BBTS/src/main/scala-2.11/Main.scala...
+Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/BBTS/src/main/scala-2.11/Main.scala...
+Initial set of included nodes: Set(/Users/jackdavey/Documents/BBTS/src/main/scala-2.11/Main.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/BBTS/src/main/scala-2.11/Main.scala)
+The /Users/jackdavey/Documents/BBTS/src/main/scala-2.11/Main.scala source file has the following regular definitions changed:
+	notify, wait, $asInstanceOf, equals, asInstanceOf, executionStart, synchronized, $isInstanceOf, main, notifyAll, isInstanceOf, ==, clone, Main, toString, args, !=, getClass, ne, eq, delayedInit, ##, finalize, hashCode.
+All member reference dependencies will be considered within this context.
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 2 s, completed 17-Apr-2016 12:48:24
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@23d7dd8, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed 17-Apr-2016 12:48:24
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1018517c, check cycles: false
+
+Initial source changes: 
+	removed:Set(/Users/jackdavey/Documents/BBTS/src/main/scala/HelloAkkaScala.scala)
+	added: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/dummy/HelloAkkaScala.scala)
+	modified: Set()
+Removed products: Set(/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes/WhoToGreet.class, /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes/WhoToGreet$.class, /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes/Greeting.class, /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes/Greet.class, /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes/Main$delayedInit$body.class, /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes/GreetPrinter.class, /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes/HelloAkkaScala$delayedInit$body.class, /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes/Main.class, /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes/HelloAkkaScala.class, /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes/GreetPrinter$$anonfun$receive$2.class, /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes/Greeter$$anonfun$receive$1.class, /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes/Greeter.class, /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes/Greeting$.class, /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes/Main$.class, /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes/Greet$.class, /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes/HelloAkkaScala$.class)
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/HelloAkkaScala.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/dummy/HelloAkkaScala.scala)
+
+Sources indirectly invalidated by:
+	product: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/HelloAkkaScala.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/Main.scala)
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/HelloAkkaScala.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/dummy/HelloAkkaScala.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/Main.scala)
+
+Recompiling all 3 sources: invalidated sources (3) exceeded 50.0% of all sources
+Read from stdout: Compiling 2 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Compiling 2 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler cd06f9c, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-actor_2.11/2.4.0/jars/akka-actor_2.11.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-testkit_2.11/2.4.0/jars/akka-testkit_2.11.jar
+Scala compilation took 1.329912 s
+Attempting to call com.sun.tools.javac.api.JavacTool@63882201 directly...
+Java compilation took 0.18442 s
+Java analysis took 0.001021 s
+Java compile + analysis took 0.187779 s
+Invalidating /Users/jackdavey/Documents/BBTS/src/main/scala/dummy/HelloAkkaScala.scala...
+Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/BBTS/src/main/scala/dummy/HelloAkkaScala.scala...
+Initial set of included nodes: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/dummy/HelloAkkaScala.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/dummy/HelloAkkaScala.scala)
+The /Users/jackdavey/Documents/BBTS/src/main/scala/dummy/HelloAkkaScala.scala source file has the following implicit definitions changed:
+	self, context.
+All member reference dependencies will be considered within this context.
+Invalidating /Users/jackdavey/Documents/BBTS/src/main/scala/HelloAkkaScala.scala...
+Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/BBTS/src/main/scala/HelloAkkaScala.scala...
+Initial set of included nodes: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/HelloAkkaScala.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/HelloAkkaScala.scala)
+The /Users/jackdavey/Documents/BBTS/src/main/scala/HelloAkkaScala.scala source file has the following implicit definitions changed:
+	self, context.
+All member reference dependencies will be considered within this context.
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 2 s, completed 17-Apr-2016 12:49:23
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@4de880e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed 17-Apr-2016 12:49:24
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@61bf18d4, check cycles: false
+
+Initial source changes: 
+	removed:Set(/Users/jackdavey/Documents/BBTS/src/main/scala/Main.scala)
+	added: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/main/Main.scala)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/Main.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/main/Main.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/Main.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/main/Main.scala)
+
+Recompiling all 3 sources: invalidated sources (2) exceeded 50.0% of all sources
+Read from stdout: Compiling 2 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Compiling 2 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 24cf255f, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-actor_2.11/2.4.0/jars/akka-actor_2.11.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-testkit_2.11/2.4.0/jars/akka-testkit_2.11.jar
+Scala compilation took 0.887711 s
+Attempting to call com.sun.tools.javac.api.JavacTool@51f5c338 directly...
+Java compilation took 0.122818 s
+Java analysis took 9.21E-4 s
+Java compile + analysis took 0.125778 s
+Invalidating /Users/jackdavey/Documents/BBTS/src/main/scala/main/Main.scala...
+Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/BBTS/src/main/scala/main/Main.scala...
+Initial set of included nodes: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/main/Main.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/main/Main.scala)
+The /Users/jackdavey/Documents/BBTS/src/main/scala/main/Main.scala source file has the following regular definitions changed:
+	notify, wait, $asInstanceOf, equals, asInstanceOf, executionStart, synchronized, $isInstanceOf, main, notifyAll, isInstanceOf, ==, clone, Main, toString, args, !=, getClass, ne, eq, delayedInit, ##, finalize, hashCode.
+All member reference dependencies will be considered within this context.
+Invalidating /Users/jackdavey/Documents/BBTS/src/main/scala/Main.scala...
+Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/BBTS/src/main/scala/Main.scala...
+Initial set of included nodes: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/Main.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/Main.scala)
+The /Users/jackdavey/Documents/BBTS/src/main/scala/Main.scala source file has the following regular definitions changed:
+	notify, wait, $asInstanceOf, equals, asInstanceOf, executionStart, synchronized, $isInstanceOf, main, notifyAll, isInstanceOf, ==, clone, Main, toString, args, !=, getClass, ne, eq, delayedInit, ##, finalize, hashCode.
+All member reference dependencies will be considered within this context.
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 17-Apr-2016 12:49:41
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@9a15691, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed 17-Apr-2016 12:49:42
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@28b4f4f9, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/main/Main.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/dummy/HelloAkkaScala.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/main/Main.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/dummy/HelloAkkaScala.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/main/Main.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/dummy/HelloAkkaScala.scala)
+
+Recompiling all 3 sources: invalidated sources (2) exceeded 50.0% of all sources
+Read from stdout: Compiling 2 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Compiling 2 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 33221298, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-actor_2.11/2.4.0/jars/akka-actor_2.11.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-testkit_2.11/2.4.0/jars/akka-testkit_2.11.jar
+Scala compilation took 1.003794 s
+Attempting to call com.sun.tools.javac.api.JavacTool@2ba993a6 directly...
+Java compilation took 0.085094 s
+Java analysis took 0.00218 s
+Java compile + analysis took 0.089515 s
+Invalidating /Users/jackdavey/Documents/BBTS/src/main/scala/dummy/HelloAkkaScala.scala...
+Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/BBTS/src/main/scala/dummy/HelloAkkaScala.scala...
+Initial set of included nodes: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/dummy/HelloAkkaScala.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/dummy/HelloAkkaScala.scala)
+The /Users/jackdavey/Documents/BBTS/src/main/scala/dummy/HelloAkkaScala.scala source file has the following implicit definitions changed:
+	self, context.
+All member reference dependencies will be considered within this context.
+Invalidating /Users/jackdavey/Documents/BBTS/src/main/scala/main/Main.scala...
+Invalidating (transitively) by inheritance from /Users/jackdavey/Documents/BBTS/src/main/scala/main/Main.scala...
+Initial set of included nodes: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/main/Main.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/main/Main.scala)
+The /Users/jackdavey/Documents/BBTS/src/main/scala/main/Main.scala source file has the following regular definitions changed:
+	notify, wait, $asInstanceOf, equals, asInstanceOf, executionStart, synchronized, $isInstanceOf, main, notifyAll, isInstanceOf, ==, clone, Main, toString, args, !=, getClass, ne, eq, delayedInit, ##, finalize, hashCode.
+All member reference dependencies will be considered within this context.
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 17-Apr-2016 12:50:05
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@861cac, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Recompiling all 7 sources: invalidated sources (4) exceeded 50.0% of all sources
+Read from stdout: Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 5ca49b0d, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-actor_2.11/2.4.0/jars/akka-actor_2.11.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-testkit_2.11/2.4.0/jars/akka-testkit_2.11.jar
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala:10: '.' expected but ';' found.
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala:10: '.' expected but ';' found.
+Read from stdout: class WorkMonth extends  WorkPeriod
+class WorkMonth extends  WorkPeriod
+Read from stdout: ^
+^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala:13: '=' expected but '}' found.
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala:13: '=' expected but '}' found.
+Read from stdout: }
+}
+Read from stdout: ^
+^
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 17-Apr-2016 12:50:54
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@22fd7c9c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Recompiling all 7 sources: invalidated sources (4) exceeded 50.0% of all sources
+Read from stdout: Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 2b3ec446, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-actor_2.11/2.4.0/jars/akka-actor_2.11.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-testkit_2.11/2.4.0/jars/akka-testkit_2.11.jar
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala:13: '=' expected but '}' found.
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala:13: '=' expected but '}' found.
+Read from stdout: }
+}
+Read from stdout: ^
+^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 17-Apr-2016 12:51:33
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@58f484e5, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Recompiling all 7 sources: invalidated sources (4) exceeded 50.0% of all sources
+Read from stdout: Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 785beb1b, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-actor_2.11/2.4.0/jars/akka-actor_2.11.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-testkit_2.11/2.4.0/jars/akka-testkit_2.11.jar
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala:15: illegal start of simple pattern
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala:15: illegal start of simple pattern
+Read from stdout: }
+}
+Read from stdout: ^
+^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 17-Apr-2016 12:53:00
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@29091b3a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Recompiling all 7 sources: invalidated sources (4) exceeded 50.0% of all sources
+Read from stdout: Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 7a6526cf, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-actor_2.11/2.4.0/jars/akka-actor_2.11.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-testkit_2.11/2.4.0/jars/akka-testkit_2.11.jar
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala:14: identifier expected but ']' found.
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala:14: identifier expected but ']' found.
+Read from stdout: private var days:Map[]
+     private var days:Map[]
+Read from stdout: ^
+                          ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala:15: ']' expected but '}' found.
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala:15: ']' expected but '}' found.
+Read from stdout: }
+}
+Read from stdout: ^
+^
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 17-Apr-2016 12:53:19
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@43e8ae13, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Recompiling all 7 sources: invalidated sources (4) exceeded 50.0% of all sources
+Read from stdout: Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 55cc4104, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-actor_2.11/2.4.0/jars/akka-actor_2.11.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-testkit_2.11/2.4.0/jars/akka-testkit_2.11.jar
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:9: illegal cyclic reference involving class WorkShift
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:9: illegal cyclic reference involving class WorkShift
+Read from stdout: class WorkShift(private var _standardTime:Duration,
+class WorkShift(private var _standardTime:Duration,
+Read from stdout: ^
+               ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala:15: type mismatch;
+Read from stdout: found   : java.time.Duration
+Read from stdout: required: String
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala:15: type mismatch;
+ found   : java.time.Duration
+ required: String
+Read from stdout: afternoon.totalNumberOfHoursWorked
+        afternoon.totalNumberOfHoursWorked
+Read from stdout: ^
+                  ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:71: not found: value overtime
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:71: not found: value overtime
+Read from stdout: _overTime = addTime(mins,hours,overtime);
+      _overTime = addTime(mins,hours,overtime);
+Read from stdout: ^
+                                     ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:26: not found: value _overtime
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:26: not found: value _overtime
+Read from stdout: def totalNumberOfHoursWorked:Duration = _standardTime.plus(_overtime)
+  def totalNumberOfHoursWorked:Duration = _standardTime.plus(_overtime)
+Read from stdout: ^
+                                                             ^
+Read from stdout: four errors found
+four errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 17-Apr-2016 12:53:37
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@21c29c9e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Recompiling all 7 sources: invalidated sources (4) exceeded 50.0% of all sources
+Read from stdout: Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 176f403, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-actor_2.11/2.4.0/jars/akka-actor_2.11.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-testkit_2.11/2.4.0/jars/akka-testkit_2.11.jar
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:9: illegal cyclic reference involving class WorkShift
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:9: illegal cyclic reference involving class WorkShift
+Read from stdout: class WorkShift(private var _standardTime:Duration,
+class WorkShift(private var _standardTime:Duration,
+Read from stdout: ^
+               ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala:15: type mismatch;
+Read from stdout: found   : java.time.Duration
+Read from stdout: required: String
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala:15: type mismatch;
+ found   : java.time.Duration
+ required: String
+Read from stdout: afternoon.totalNumberOfHoursWorked
+        afternoon.totalNumberOfHoursWorked
+Read from stdout: ^
+                  ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:71: not found: value overtime
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:71: not found: value overtime
+Read from stdout: _overTime = addTime(mins,hours,overtime);
+      _overTime = addTime(mins,hours,overtime);
+Read from stdout: ^
+                                     ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:26: not found: value _overtime
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:26: not found: value _overtime
+Read from stdout: def totalNumberOfHoursWorked:Duration = _standardTime.plus(_overtime)
+  def totalNumberOfHoursWorked:Duration = _standardTime.plus(_overtime)
+Read from stdout: ^
+                                                             ^
+Read from stdout: four errors found
+four errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 1 s, completed 17-Apr-2016 12:54:30
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3ab657b7, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Recompiling all 7 sources: invalidated sources (4) exceeded 50.0% of all sources
+Read from stdout: Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 1b575c5, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-actor_2.11/2.4.0/jars/akka-actor_2.11.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-testkit_2.11/2.4.0/jars/akka-testkit_2.11.jar
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:9: illegal cyclic reference involving class WorkShift
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:9: illegal cyclic reference involving class WorkShift
+Read from stdout: class WorkShift(private var _standardTime:Duration,
+class WorkShift(private var _standardTime:Duration,
+Read from stdout: ^
+               ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala:15: type mismatch;
+Read from stdout: found   : java.time.Duration
+Read from stdout: required: String
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala:15: type mismatch;
+ found   : java.time.Duration
+ required: String
+Read from stdout: afternoon.totalNumberOfHoursWorked
+        afternoon.totalNumberOfHoursWorked
+Read from stdout: ^
+                  ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:71: not found: value overtime
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:71: not found: value overtime
+Read from stdout: _overTime = addTime(mins,hours,overtime);
+      _overTime = addTime(mins,hours,overtime);
+Read from stdout: ^
+                                     ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:26: not found: value _overtime
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:26: not found: value _overtime
+Read from stdout: def totalNumberOfHoursWorked:Duration = _standardTime.plus(_overtime)
+  def totalNumberOfHoursWorked:Duration = _standardTime.plus(_overtime)
+Read from stdout: ^
+                                                             ^
+Read from stdout: four errors found
+four errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 17-Apr-2016 12:54:55
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@fb42ac1, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Recompiling all 7 sources: invalidated sources (4) exceeded 50.0% of all sources
+Read from stdout: Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 54ebf508, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-actor_2.11/2.4.0/jars/akka-actor_2.11.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-testkit_2.11/2.4.0/jars/akka-testkit_2.11.jar
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:9: illegal cyclic reference involving class WorkShift
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:9: illegal cyclic reference involving class WorkShift
+Read from stdout: class WorkShift(private var _standardTime:Duration,
+class WorkShift(private var _standardTime:Duration,
+Read from stdout: ^
+               ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala:15: type mismatch;
+Read from stdout: found   : java.time.Duration
+Read from stdout: required: String
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala:15: type mismatch;
+ found   : java.time.Duration
+ required: String
+Read from stdout: afternoon.totalNumberOfHoursWorked
+        afternoon.totalNumberOfHoursWorked
+Read from stdout: ^
+                  ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:71: not found: value overtime
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:71: not found: value overtime
+Read from stdout: _overTime = addTime(mins,hours,overtime);
+      _overTime = addTime(mins,hours,overtime);
+Read from stdout: ^
+                                     ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:26: not found: value _overtime
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:26: not found: value _overtime
+Read from stdout: def totalNumberOfHoursWorked:Duration = _standardTime.plus(_overtime)
+  def totalNumberOfHoursWorked:Duration = _standardTime.plus(_overtime)
+Read from stdout: ^
+                                                             ^
+Read from stdout: four errors found
+four errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 17-Apr-2016 12:55:14
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@6ab276dc, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Recompiling all 7 sources: invalidated sources (4) exceeded 50.0% of all sources
+Read from stdout: Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 61bab528, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-actor_2.11/2.4.0/jars/akka-actor_2.11.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-testkit_2.11/2.4.0/jars/akka-testkit_2.11.jar
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:9: illegal cyclic reference involving class WorkShift
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:9: illegal cyclic reference involving class WorkShift
+Read from stdout: class WorkShift(private var _standardTime:Duration,
+class WorkShift(private var _standardTime:Duration,
+Read from stdout: ^
+               ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala:15: type mismatch;
+Read from stdout: found   : java.time.Duration
+Read from stdout: required: String
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala:15: type mismatch;
+ found   : java.time.Duration
+ required: String
+Read from stdout: afternoon.totalNumberOfHoursWorked
+        afternoon.totalNumberOfHoursWorked
+Read from stdout: ^
+                  ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:71: not found: value overtime
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:71: not found: value overtime
+Read from stdout: _overTime = addTime(mins,hours,overtime);
+      _overTime = addTime(mins,hours,overtime);
+Read from stdout: ^
+                                     ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:26: not found: value _overtime
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:26: not found: value _overtime
+Read from stdout: def totalNumberOfHoursWorked:Duration = _standardTime.plus(_overtime)
+  def totalNumberOfHoursWorked:Duration = _standardTime.plus(_overtime)
+Read from stdout: ^
+                                                             ^
+Read from stdout: four errors found
+four errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 17-Apr-2016 12:56:09
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@15772826, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Recompiling all 7 sources: invalidated sources (4) exceeded 50.0% of all sources
+Read from stdout: Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler ad5d88d, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-actor_2.11/2.4.0/jars/akka-actor_2.11.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-testkit_2.11/2.4.0/jars/akka-testkit_2.11.jar
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:9: illegal cyclic reference involving class WorkShift
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:9: illegal cyclic reference involving class WorkShift
+Read from stdout: class WorkShift(private var _standardTime:Duration,
+class WorkShift(private var _standardTime:Duration,
+Read from stdout: ^
+               ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala:15: type mismatch;
+Read from stdout: found   : java.time.Duration
+Read from stdout: required: String
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala:15: type mismatch;
+ found   : java.time.Duration
+ required: String
+Read from stdout: afternoon.totalNumberOfHoursWorked
+        afternoon.totalNumberOfHoursWorked
+Read from stdout: ^
+                  ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:71: not found: value overtime
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:71: not found: value overtime
+Read from stdout: _overTime = addTime(mins,hours,overtime);
+      _overTime = addTime(mins,hours,overtime);
+Read from stdout: ^
+                                     ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:26: not found: value _overtime
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:26: not found: value _overtime
+Read from stdout: def totalNumberOfHoursWorked:Duration = _standardTime.plus(_overtime)
+  def totalNumberOfHoursWorked:Duration = _standardTime.plus(_overtime)
+Read from stdout: ^
+                                                             ^
+Read from stdout: four errors found
+four errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 17-Apr-2016 12:57:28
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@c266669, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Recompiling all 7 sources: invalidated sources (4) exceeded 50.0% of all sources
+Read from stdout: Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 52e24c4d, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-actor_2.11/2.4.0/jars/akka-actor_2.11.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-testkit_2.11/2.4.0/jars/akka-testkit_2.11.jar
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:9: illegal cyclic reference involving class WorkShift
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:9: illegal cyclic reference involving class WorkShift
+Read from stdout: class WorkShift(private var _standardTime:Duration,
+class WorkShift(private var _standardTime:Duration,
+Read from stdout: ^
+               ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala:15: type mismatch;
+Read from stdout: found   : java.time.Duration
+Read from stdout: required: String
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala:15: type mismatch;
+ found   : java.time.Duration
+ required: String
+Read from stdout: afternoon.totalNumberOfHoursWorked
+        afternoon.totalNumberOfHoursWorked
+Read from stdout: ^
+                  ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:71: not found: value overtime
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:71: not found: value overtime
+Read from stdout: _overTime = addTime(mins,hours,overtime);
+      _overTime = addTime(mins,hours,overtime);
+Read from stdout: ^
+                                     ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:26: not found: value _overtime
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:26: not found: value _overtime
+Read from stdout: def totalNumberOfHoursWorked:Duration = _standardTime.plus(_overtime)
+  def totalNumberOfHoursWorked:Duration = _standardTime.plus(_overtime)
+Read from stdout: ^
+                                                             ^
+Read from stdout: four errors found
+four errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 17-Apr-2016 13:00:05
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@52953a57, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Recompiling all 7 sources: invalidated sources (4) exceeded 50.0% of all sources
+Read from stdout: Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 26723e8f, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-actor_2.11/2.4.0/jars/akka-actor_2.11.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-testkit_2.11/2.4.0/jars/akka-testkit_2.11.jar
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:9: illegal cyclic reference involving class WorkShift
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:9: illegal cyclic reference involving class WorkShift
+Read from stdout: class WorkShift(private var _standardTime:Duration,
+class WorkShift(private var _standardTime:Duration,
+Read from stdout: ^
+               ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala:15: type mismatch;
+Read from stdout: found   : java.time.Duration
+Read from stdout: required: String
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala:15: type mismatch;
+ found   : java.time.Duration
+ required: String
+Read from stdout: afternoon.totalNumberOfHoursWorked
+        afternoon.totalNumberOfHoursWorked
+Read from stdout: ^
+                  ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:71: not found: value overtime
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:71: not found: value overtime
+Read from stdout: _overTime = addTime(mins,hours,overtime);
+      _overTime = addTime(mins,hours,overtime);
+Read from stdout: ^
+                                     ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala:21: not found: value rawMonth
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala:21: not found: value rawMonth
+Read from stdout: def monthId:String =  rawMonth.getYear() + rawMonth.getMonth().toString()
+     def monthId:String =  rawMonth.getYear() + rawMonth.getMonth().toString()
+Read from stdout: ^
+                           ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala:21: not found: value rawMonth
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala:21: not found: value rawMonth
+Read from stdout: def monthId:String =  rawMonth.getYear() + rawMonth.getMonth().toString()
+     def monthId:String =  rawMonth.getYear() + rawMonth.getMonth().toString()
+Read from stdout: ^
+                                                ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:26: not found: value _overtime
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:26: not found: value _overtime
+Read from stdout: def totalNumberOfHoursWorked:Duration = _standardTime.plus(_overtime)
+  def totalNumberOfHoursWorked:Duration = _standardTime.plus(_overtime)
+Read from stdout: ^
+                                                             ^
+Read from stdout: 6 errors found
+6 errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 17-Apr-2016 13:00:55
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@39dae5e4, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Recompiling all 7 sources: invalidated sources (4) exceeded 50.0% of all sources
+Read from stdout: Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 73899951, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-actor_2.11/2.4.0/jars/akka-actor_2.11.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-testkit_2.11/2.4.0/jars/akka-testkit_2.11.jar
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:9: illegal cyclic reference involving class WorkShift
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:9: illegal cyclic reference involving class WorkShift
+Read from stdout: class WorkShift(private var _standardTime:Duration,
+class WorkShift(private var _standardTime:Duration,
+Read from stdout: ^
+               ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala:15: type mismatch;
+Read from stdout: found   : java.time.Duration
+Read from stdout: required: String
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala:15: type mismatch;
+ found   : java.time.Duration
+ required: String
+Read from stdout: afternoon.totalNumberOfHoursWorked
+        afternoon.totalNumberOfHoursWorked
+Read from stdout: ^
+                  ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:71: not found: value overtime
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:71: not found: value overtime
+Read from stdout: _overTime = addTime(mins,hours,overtime);
+      _overTime = addTime(mins,hours,overtime);
+Read from stdout: ^
+                                     ^
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:26: not found: value _overtime
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala:26: not found: value _overtime
+Read from stdout: def totalNumberOfHoursWorked:Duration = _standardTime.plus(_overtime)
+  def totalNumberOfHoursWorked:Duration = _standardTime.plus(_overtime)
+Read from stdout: ^
+                                                             ^
+Read from stdout: four errors found
+four errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 17-Apr-2016 13:01:21
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@239a7b4a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkPeriod.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkShift.scala, /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkDay.scala)
+
+Recompiling all 7 sources: invalidated sources (4) exceeded 50.0% of all sources
+Read from stdout: Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Compiling 6 Scala sources and 1 Java source to /Users/jackdavey/Documents/BBTS/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.8
+Other repositories:
+Default repositories:
+Running cached compiler 41bbfe4f, interfacing (CompilerInterface) with Scala compiler version 2.11.8
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/classes:/Users/jackdavey/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+	-classpath
+	/Users/jackdavey/Documents/BBTS/target/scala-2.11/classes:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-actor_2.11/2.4.0/jars/akka-actor_2.11.jar:/Users/jackdavey/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/jackdavey/Downloads/activator-dist-1.3.9/repository/com.typesafe.akka/akka-testkit_2.11/2.4.0/jars/akka-testkit_2.11.jar
+Read from stdout: /Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala:16: identifier expected but '.' found.
+/Users/jackdavey/Documents/BBTS/src/main/scala/model/WorkMonth.scala:16: identifier expected but '.' found.
+Read from stdout: (1..rawMonth)
+     (1..rawMonth)
+Read from stdout: ^
+        ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 17-Apr-2016 13:02:34
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+Done executing sbt server engine, result Right(Exit(0))
+Closing listening server socket
+Waiting for socket thread
+Waiting for request processor thread
+Waiting for command engine result
+Returning control to sbt launcher with result Exit(0)
+Closing the 39454@jacks-MacBook-Pro.local logs at Sun Apr 17 13:05:41 BST 2016, goodbye.
